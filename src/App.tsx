@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 function App() {
 
   return (
@@ -7,6 +5,7 @@ function App() {
       <h1 className='font-bold text-3xl text-center'>Your Todos</h1>
     </main>
   )
+  
 }
 
 export default App

@@ -1,4 +1,6 @@
-export const dummyData = [
+import type { Todo } from "../types/todo";
+
+export const dummyData:Todo[] = [
    {
       id: 1,
       title: "First Title: This is first todo",

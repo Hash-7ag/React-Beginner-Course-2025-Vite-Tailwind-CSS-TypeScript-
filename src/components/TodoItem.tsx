@@ -10,16 +10,16 @@ function TodoItem({todo, onCompletedChange}: TodoItemProps) {
       <div>
          <label className="
          flex items-center gap-2 
-         border rounded-xl border-slate-700 
+         border-2 rounded-xl border-slate-500 
          py-1 px-3 
          bg-white hover:bg-slate-200 hover:scale-[1.032] transition-all ">
             <input 
             type="checkbox" 
             checked={todo.completed}
             onChange={(e) => onCompletedChange(todo.id, e.target.checked)}
-            className="scale-125 hover:scale-[1.35] transition-all accent-slate-700"  
+            className="scale-125 hover:scale-[1.35] transition-all accent-slate-500"  
             />  
-            <span className={todo.completed ? "line-through text-xl text-slate-400" : "text-xl text-slate-700"}>{todo.title}</span> 
+            <span className={todo.completed ? "line-through text-xl text-slate-400" : "text-xl text-slate-500"}>{todo.title}</span> 
          </label>
       </div>
    )

@@ -12,7 +12,7 @@ function TodoItem({todo, onCompletedChange}: TodoItemProps) {
          flex items-center gap-2 
          border-2 rounded-xl border-slate-500 
          py-1 px-3 
-         bg-white hover:bg-slate-200 hover:scale-[1.032] transition-all ">
+         bg-white hover:bg-slate-100 hover:scale-[1.032] transition-all ">
             <input 
             type="checkbox" 
             checked={todo.completed}

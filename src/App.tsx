@@ -25,7 +25,8 @@ function App() {
 
    function addTodoItem(title: string){
       // console.log(title);
-      const newId = todos.length > 0 ? Math.max(...todos.map(t => t.id)) + 1 : 1;
+      // const newId = todos.length > 0 ? Math.max(...todos.map(t => t.id)) + 1 : 1;
+      const newId = Date.now();
 
       const newTodo = {
          id: newId,

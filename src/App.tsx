@@ -12,6 +12,7 @@ function App() {
       addTodoItem,
       deleteTodo,
       deleteAllCompletedTodos,
+      deleteAll,
    } = useTodos()
 
   return (
@@ -20,7 +21,7 @@ function App() {
       <TodoSummary 
          todos={todos}
          deleteAllCompleted={deleteAllCompletedTodos}
-         deleteAll = {() => {setTodos([])}}
+         deleteAll = {deleteAll}
       />
       <div className="max-w-xl mx-auto bg-slate-200 p-10 rounded-xl space-y-6">
          <div>

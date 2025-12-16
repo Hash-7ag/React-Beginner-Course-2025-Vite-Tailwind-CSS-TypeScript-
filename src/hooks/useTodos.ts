@@ -49,11 +49,16 @@ export default function useTodos(){
       setTodos(prevTodos => prevTodos.filter(todo => !todo.completed));
    }
 
+   function deleteAll(){
+      setTodos([]);
+   }
+
    return {
       todos,
       setTodoCompleted,
       addTodoItem,
       deleteTodo,
       deleteAllCompletedTodos,
+      deleteAll,
    }
 }

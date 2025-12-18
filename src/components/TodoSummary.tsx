@@ -22,10 +22,10 @@ function TodoSummary({
                {completedTodos.length}/{todos.length} todos completed
             </p>
          </div>
-         <div className="flex justify-start items-center gap-5">
+         <div className="flex justify-start items-center gap-2 sm:gap-5">
             <div className="relative group">
                <button className="
-               scale-125 p-2 rounded-lg
+               scale-100 sm:scale-125 p-2 rounded-lg
                text-red-400 hover:text-red-500 bg-red-200 hover:bg-red-300 transition-colors duration-200
                "
                onClick={deleteAll}>
@@ -46,7 +46,7 @@ function TodoSummary({
             {completedTodos.length > 0 && (
                <div className="relative group">
                   <button className="
-                  scale-125 p-2 rounded-lg
+                  scale-100 sm:scale-125 p-2 rounded-lg
                   group-hover:
                   text-yellow-500 bg-yellow-200 hover:bg-yellow-300 transition-colors duration-200
                   "

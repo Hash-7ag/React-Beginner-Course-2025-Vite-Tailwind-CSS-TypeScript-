@@ -21,7 +21,7 @@ function TodoList({
 
    return (
       <>
-         <div className="space-y-2 mt-5">
+         <div className="space-y-2 mt-2 sm:mt-5">
             {todosSorted.map(todo=> (
                <TodoItem
                   key={todo.id} 

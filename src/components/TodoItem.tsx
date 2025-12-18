@@ -21,10 +21,10 @@ function TodoItem({todo, onCompletedChange, onDelete}: TodoItemProps) {
             onChange={(e) => onCompletedChange(todo.id, e.target.checked)}
             className="scale-125 hover:scale-[1.35] transition-all accent-slate-500"  
             />  
-            <span className={todo.completed ? "line-through text-xl text-slate-400" : "text-xl text-slate-500"}>{todo.title}</span> 
+            <span className={todo.completed ? "line-through text-mid sm:text-xl text-slate-400" : "text-mid sm:text-xl text-slate-500"}>{todo.title}</span> 
          </label>
          <button 
-            className="p-2"
+            className="p-0 md:p-2"
             onClick={() => onDelete(todo.id)}
          >
             <Trash2 size={25} className="text-slate-500 hover:text-slate-600 transition-all" /> 
